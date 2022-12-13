@@ -1,12 +1,12 @@
 import numpy as np
 
 
-
 #List of teams that reached the round of 16 for the 2023 Champions League
 
-Winners = [['NAP','A','ITA' ],['POR','B','POR'],['BAY','C','GER'], ['TOT','D','ENG'],['CHE','E','ENG'],['Real','F',"SPA"],['ManC','G',"ENG"],['BEN','H','POR']]
-Runners_up = [['LIV','A','ENG'],['BRU','B','BEL'],['INT','C','ITA'],['FRA','D','GER'],['MIL','E','ITA'],['LEI','F','GER'],['DOR','G','GER'],['PSG','H','FRA']]
-
+#Winners = [['NAP','A','ITA' ],['POR','B','POR'],['BAY','C','GER'], ['TOT','D','ENG'],['CHE','E','ENG'],['Real','F',"SPA"],['ManC','G',"ENG"],['BEN','H','POR']]
+#Runners_up = [['LIV','A','ENG'],['BRU','B','BEL'],['INT','C','ITA'],['FRA','D','GER'],['MIL','E','ITA'],['LEI','F','GER'],['DOR','G','GER'],['PSG','H','FRA']]
+Winners = [['NAP','A','ITA' ],['POR','B','POR'],['BAY','C','GER'], ['TOT','D','ENG']]
+Runners_up = [['LIV','A','ENG'],['BRU','B','BEL'],['INT','C','ITA'],['FRA','D','GER']]
 #On crée un graph G où chaque noeud représente une équipe, deux noeuds sont
 #connectés s'ils n'appartiennent pas au même pays (répondent à la contrainte).
 #G est une matrice de taille nb_teams² où aij = 1 si les équipes peuvent jouer l'une contre l'autre 0 sinon.
