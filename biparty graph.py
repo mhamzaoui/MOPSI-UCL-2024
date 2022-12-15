@@ -11,16 +11,7 @@ Runners_up = [['LIV','A','ENG'],['BRU','B','BEL'],['INT','C','ITA'],['FRA','D','
 #connectés s'ils n'appartiennent pas au même pays (répondent à la contrainte).
 #G est une matrice de taille nb_teams² où aij = 1 si les équipes peuvent jouer l'une contre l'autre 0 sinon.
 
-def initialize(winners,runners_up):
-    fullCompatibilityMatrix = np.zeros((len(winners),len(runners_up)))
-    for i in range(len(winners)):
-        for j in range(len(runners_up)):
-            if winners[i][1] == runners_up[j][1] or winners[i][2] == runners_up[j][2]:
-                fullCompatibilityMatrix[i,j] = 0
-            else:
-                fullCompatibilityMatrix[i,j] = 1
 
-    return fullCompatibilityMatrix
 
 
 
