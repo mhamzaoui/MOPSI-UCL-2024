@@ -2,7 +2,16 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-M = [1,2,4]
-A = [1,3,4]
-B = [1,3,4]
-C = [1,3,4]
+# create a list
+prime_numbers = [2, 3, 5, 7, 9, 11]
+
+# remove 9 from the list
+prime_numbers.remove(9)
+
+
+# Updated prime_numbers List
+
+# Output: Updated List:  [2, 3, 5, 7, 11]
+M = [2,4,8,9]
+X = M.pop(2)
+print(X)

@@ -11,6 +11,13 @@ Runners_up = [['LIV','A','ENG'],['BRU','B','BEL'],['INT','C','ITA'],['FRA','D','
 #connectés s'ils n'appartiennent pas au même pays (répondent à la contrainte).
 #G est une matrice de taille nb_teams² où aij = 1 si les équipes peuvent jouer l'une contre l'autre 0 sinon.
 
+def adjency_matrix(winners,runners_up):
+    M = np.zeros((len(winners),len(runners_up)))
+    for i in range(len(winners)):
+        for j in range(len(runners_up)):
+            if winners[i][1] != runners_up[j][1] and winners[i][2] != runners_up[j][2]:
+                M[i,j] = 1
+    return M
 
 
 
