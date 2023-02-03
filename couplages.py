@@ -1,0 +1,4 @@
+PotA = [['Manchester City', 'Eng'], ['Bayern München', 'Ger'], ['Liverpool', 'Eng'], ['Chelsea', 'Eng'], ['Paris Saint-Germain', 'Fra'], ['Real Madrid', 'Esp'], ['FC Barcelona', 'Esp'], ['Manchester United', 'Eng'], ['Juventus', 'Ita']]
+PotB = [['Ajax', 'Ned'], ['Atlético Madrid', 'Esp'], ['Borussia Dortmund', 'Ger'], ['AS Roma', 'Ita'], ['RB Leipzig', 'Ger'], ['Internazionale', 'Ita'], ['Villarreal', 'Esp'], ['FC Porto', 'Por'], ['Tottenham Hotspur', 'Eng']]
+PotC = [['Sevilla', 'Esp'], ['Eintracht Frankfurt', 'Ger'], ['Benfica', 'Por'], ['Napoli', 'Ita'], ['Arsenal', 'Eng'], ['Shakhtar Donetsk', 'Ukr'], ['Bayer Leverkusen', 'Ger'], ['Olympique Lyon', 'Fra'], ['FC Salzburg', 'Aut']]
+PotD = [['Atalanta', 'Ita'], ['Dinamo Zagreb', 'Cro'], ['Club Brugge', 'Bel'], ['Glasgow Rangers', 'Sco'], ['Slavia Praha', 'Cze'], ['Sporting CP Lisbon', 'Por'], ['Feyenoord', 'Ned'], ['FC Basel', 'Sui'], ['Stade Rennais', 'Fra']]
