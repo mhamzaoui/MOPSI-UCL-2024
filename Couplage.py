@@ -3,9 +3,10 @@ import py_bipartite_matching as pbm
 import networkx as nx
 import math
 
-Winners = [['NAP','A','ITA' ],['POR','B','POR'],['BAY','C','GER'], ['TOT','D','ENG'],['CHE','E','ENG'],['Real','F',"SPA"],['ManC','G',"ENG"],['BEN','H','POR']]
+Winners = [['NAP', 'A', 'ITA'],['POR','B','POR'],['BAY','C','GER'], ['TOT','D','ENG'],['CHE','E','ENG'],['Real','F',"SPA"],['ManC','G',"ENG"],['BEN','H','POR']]
 Runners_up = [['LIV','A','ENG'],['BRU','B','BEL'],['INT','C','ITA'],['FRA','D','GER'],['MIL','E','ITA'],['LEI','F','GER'],['DOR','G','GER'],['PSG','H','FRA']]
 n = len(Winners)
+
 def initialize(winners,runners_up):
     edges=[]
     for i in range(len(winners)):
@@ -20,9 +21,8 @@ B = nx.Graph()# Add nodes with the node attribute "bipartite"
 left_nodes = [W[0] for W in Winners]
 right_nodes = [R[0] for R in Runners_up]
 B.add_nodes_from(left_nodes, bipartite=0)
-B.add_nodes_from(right_nodes, bipartite=1)# Add edges only between nodes of opposite node sets
+B.add_nodes_from(right_nodes, bipartite=1) # Add edges only between nodes of opposite node sets
 B.add_edges_from(initialize(Winners,Runners_up))
-
 
 nb_matchings = 0
 matchings = []
@@ -30,8 +30,9 @@ for matching in pbm.enum_maximum_matchings(B):
     nb_matchings += 1
     matchings.append(list(matching.items()))
 
-#définir une fonction
 
+#définir une fonction
+'''
 def probability(X, matching):
   # Calcule la probabilité p(x) en utilisant la formule donnée
   res = 0
@@ -57,10 +58,11 @@ def a(G,X, i):
   # Calcule le nombre d'arêtes incidentes à i contenues dans un couplage parfait de G privé de X et M(X)
   M_X = voisins(G,X)
   for m in matching:
-      if m[0] = i and i is not in X and :
+      if m[0] == i and i not in X:
+          break
   return sum(1 for (u, v) in matching if u == i and v not in X)
 
 for matching in matchings:
   #prob = probability(right_nodes, matching)
   #print(f"Probabilité de tirer le couplage parfait {matching}: {prob}")
-  print(a(matching,'PSG'))
+  print(a(matching,'PSG'))'''
